@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web đọc tin tức</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+#loadMore {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#loadMore:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="article">Bài viết 1</div>
+        <div class="article">Bài viết 2</div>
+        <div class="article">Bài viết 3</div>
+        <button id="loadMore">Xem Thêm</button>
+    </div>
+    <script>
+        // script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const loadMoreButton = document.getElementById('loadMore');
+    let currentArticleCount = 3;
+
+    loadMoreButton.addEventListener('click', () => {
+        // Số lượng bài viết mới muốn tải thêm
+        const newArticles = [
+            'Bài viết 4',
+            'Bài viết 5',
+            'Bài viết 6',
+            'Bài viết 7',
+            'Bài viết 8'
+        ];
+
+        const container = document.querySelector('.container');
+        
+        // Tạo các thẻ div mới cho các bài viết mới
+        newArticles.forEach(articleContent => {
+            const articleDiv = document.createElement('div');
+            articleDiv.className = 'article';
+            articleDiv.textContent = articleContent;
+            container.insertBefore(articleDiv, loadMoreButton);
+        });
+
+        currentArticleCount += newArticles.length;
+
+        // Ẩn nút "Xem Thêm" khi đã tải đủ bài viết
+        if (currentArticleCount >= 8) {
+            loadMoreButton.style.display = 'none';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

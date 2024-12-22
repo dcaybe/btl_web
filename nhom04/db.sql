@@ -1,0 +1,38 @@
+-- db name: nhom_04 Database lưu trữ, quản lý thông tin sinh viên
+-- create DATABASE if not EXISTS nhom_4
+
+-- Các bảng: 
+-- 1. sinh_vien: Lưu trữ thông tin sinh viên
+    --ma_sv 
+    --ten_sv
+    --gioi_tinh
+    --ngay_sinh
+    --dia_chi
+    --sdt
+    --ma_lop
+    --ma_khoa
+-- 2. lop: Lưu trữ thông tin lớp học
+    --ma_lop 
+    --ten_lop
+    --thanh_vien
+    --ma_giao_vien
+    --ma_khoa
+-- 3. khoa: Lưu trữ thông tin các khoa
+    --ma_khoa
+    --ten_khoa
+    --so_luong_khoa
+-- 4. giao_vien: Lưu trữ thông tin giáo viên
+    --ma_giao_vien
+    --ten
+    --tuoi
+    --dia_chi
+    --sdt
+    --ma_khoa
+-- 5. diem: Lưu trữ thông tin điểm của sinh viên
+    --ma_diem
+    --diem_a
+    --diem_b
+    --diem_c
+    --ma_sv
+    --ma_lop
+

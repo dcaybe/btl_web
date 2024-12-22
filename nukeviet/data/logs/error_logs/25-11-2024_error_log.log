@@ -1,0 +1,15 @@
+[Mon, 25 Nov 2024 08:52:30 +0700] [localhost] [::1] [Warning(2): exif_read_data(banner-iphone-16-series-02.jpg): Incorrect APP1 Exif Identifier Code] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 1076] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 73    FILE: /admin/upload/upload.php
+#3  LINE: 1076  FILE: /vendor/vinades/nukeviet/Files/Upload.php
+
+[Mon, 25 Nov 2024 09:15:57 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to undefined function each() in C:\xampp\htdocs\nukeviet\modules\shops\admin\del_cat.php:74
+Stack trace:
+#0 C:\xampp\htdocs\nukeviet\admin\index.php(182): require()
+#1 {main}
+  thrown] [FILE: /modules/shops/admin/del_cat.php] [LINE: 74]
+[Mon, 25 Nov 2024 09:27:08 +0700] [localhost] [::1] [Run-time notices(8192): Implicit conversion from float 6749810.000000001 to int loses precision] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 163] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 116   FILE: /modules/banners/admin/edit_banner.php
+#3  LINE: 163   FILE: /vendor/vinades/nukeviet/Files/Upload.php
+

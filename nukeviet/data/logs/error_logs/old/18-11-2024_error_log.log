@@ -1,0 +1,7 @@
+[Mon, 18 Nov 2024 10:12:57 +0700] [localhost] [::1] [User Notice(1024): SQLSTATE[HY000] [1045] Access denied for user 'Admin'@'localhost' (using password: YES)] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 94]
+[Mon, 18 Nov 2024 10:17:18 +0700] [localhost] [::1] [Warning(2): imagecreatefrompng(): gd-png: libpng warning: iCCP: known incorrect sRGB profile] [FILE: /vendor/vinades/nukeviet/Files/Image.php] [LINE: 205]
+[Mon, 18 Nov 2024 10:43:22 +0700] [localhost] [::1] [Run-time notices(8192): Implicit conversion from float 3328729.9999999995 to int loses precision] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 163] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 65    FILE: /admin/upload/upload.php
+#3  LINE: 163   FILE: /vendor/vinades/nukeviet/Files/Upload.php
+

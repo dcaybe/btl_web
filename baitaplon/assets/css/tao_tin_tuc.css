@@ -1,0 +1,64 @@
+.content{
+    display: flex;
+    gap: 80px   ;
+    background-color: #dbd9d6;
+    padding: 80px 136px ;
+}
+
+.left_content{
+    flex: 4;
+    background-color: #dbd9d6;
+    position: relative;
+}
+
+.list_icon{
+    position: absolute;
+    top: 96px;
+    left: 100px;
+}
+
+.list_icon i{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.right_content{
+    flex: 2;
+    background-color: #dbd6d9;
+}
+
+.item{
+    margin-bottom: 20px;
+}
+
+.mac{
+    text-align: center;
+    height: 20px;
+    width: 80px;
+    background-color: #d1363a;
+    ;
+    margin-right: 10px;
+}
+
+.mac--absolut{
+    position: absolute;
+
+}  
+
+.date{
+    margin-bottom: 20px;
+}
+
+.img_1{
+    height: 400px;
+    background-color: blue;
+}
+
+.img_right{
+    height: 160px;
+    background-color: #1aa3f2;
+}
+
+.text--size{
+    font-size: 25px;
+}

@@ -1,0 +1,493 @@
+button {
+    color: #fff;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+}
+body{
+    background-color: #252423;
+}
+
+.header{
+    padding:  5px 0;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right:0px;
+    left:0px;
+    height: 80px;
+    background-color:transparent;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+   z-index: 10;
+
+}
+
+
+
+h3{
+
+    margin: 16px 0 0 0 ;
+}
+
+.svg_icon svg{
+    width: 25px;
+    height: 19.44px;
+
+}
+
+.svg_icon{
+    background-color: #000;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.svg_document{
+    font-size: 22px;
+    margin: 0;
+    display: flex;
+}
+.left_nav{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    padding-left: 36px;
+    
+
+}
+.fa-solid.fa-caret-down{
+    color: #fff;
+}
+.riot_game_icon{
+    width: 100px;
+    height: 28px;
+}
+.riot_game_icon_1{
+    width: 82px;
+    height: 32px;
+}
+
+.nav{
+    /* font-size:14px; */
+    padding-top: 14.8px ;
+    padding-bottom: 14.8px ;
+    padding-inline-start: 40px;
+    margin-block-start:0;
+    margin-block-end: 0;
+    display: inline-block;
+}
+
+.nav >li{
+    display: inline-block; 
+}
+
+.nav li{
+  
+  position: relative;
+
+ 
+}
+/* .right_nav li a,
+.right_nav li , */
+.nav li a{
+    padding: 7.5px 16px;
+    text-align: center;
+    margin-right: 4px;
+    line-height: 30px;
+    display: inline-block;
+    text-decoration:none;
+    color: #fff;
+}
+.nav .subnav li:hover a,
+.nav >li:hover >a {
+   border-radius: 10px;
+    background-color: rgba(214, 226, 228, 0.5);
+}
+
+.under_line{
+    top: 0px;
+    height: 4px;
+    background-color: rgb(209, 54, 57);
+    margin-top: 0px;
+}
+
+.nav .subnav {
+    z-index: 11;
+    display: none;
+    position: absolute;
+    left: 0px;
+    padding: 0px;
+    width: 180px;
+    background-color: #111;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+
+.nav .subnav li{
+    /* left: 0px; */
+    padding: 0px;   
+    width: 180px;
+    background-color: #111;
+    margin-top: 16px;
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.nav .subnav a{
+    color: #fff;
+    padding: 7.5px 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.nav .subnav li {
+    display:flex ;
+    
+}
+ 
+.riot_btn{
+    height: 46px;
+    background-color: transparent;
+     border:none;
+     padding: 0 0 0 0;
+    outline: none;
+}
+
+.right_nav{
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    height: 45px;
+    padding: 4px 40px;
+    margin: 0px;
+    margin-top: 4px;
+
+}
+
+.right_nav_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+.right_nav_main li{
+    /* line-height: 45px; */
+    }
+.right_nav a{
+    margin-right: 10px;
+    padding: 12px 22px;
+    background: #282828;
+    border-radius: 12px;
+    color: #fff;
+   cursor: pointer;  /* thay doi con tro  */
+}
+
+.play--now_btn{
+    background: linear-gradient(133.11deg, rgb(160, 106, 43) 0%, rgb(202, 159, 66) 97.33%) !important;
+    border-radius: 18px !important;
+    color: #000 !important;
+
+}
+
+.search_btn{
+    border: 1px solid white;
+    width: 156px;
+    height: 30px;
+    border-radius: 1.6rem;
+    padding: 0.8px 22px;
+    margin-right: 6px;
+}
+
+.ti-search:before {
+    margin-right: 3px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.search_container{
+    width: 140px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_search{
+    background-color: transparent;  /* không màu */
+    border-top-style: hidden;   /*ẩn viền input */
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: 0; /* ẩn viền ô chữ*/
+    color: #fff;
+    font-size: 18px;
+    max-width: 120px;
+    padding-left: 24px;
+    margin-right: 14px;
+}
+input::placeholder { 
+    color:#e7e6e3; 
+ }
+
+.right_nav li{
+    display: inline-block;
+}
+
+.language{
+    margin-right: 20px;
+    color: #fff;
+}
+
+
+
+    
+.slider{
+    height: 908px;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+   
+    
+}
+.bgc_slider{
+  
+   
+    background: linear-gradient(transparent 28%, #e4e0da, #e4e0da);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 44%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    /* z-index: 1; */
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    /* lấy trung tâm ảnh */
+}
+.slider__layout_child{
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 678px;
+}
+
+.slider__layout_child_top{
+    width: 100%;
+    height: 50px;
+ 
+    text-align: center;
+    margin-bottom: 15px ;
+}
+.slider__layout_child_bottom{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    
+}
+.btn--playnow_slider{
+    height: 40px;
+    width: 150px;
+   
+    font-size: 20px;
+    background-color: #edbb5c;
+}
+
+
+.content{
+    background-image: url(https://playruneterra.com/assets/261df28b4865e24a1c279d88735f4ad129557adf/static/image/general/background-home.jpg);
+ color: #fff;
+}
+/* content_1 */
+.content_1{
+    height:560px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: end;
+    position: relative;
+  
+}
+.left_content_1{
+    position: absolute;
+    height: 450px;
+    width: 840px;
+    background-color: #33a14f;
+    top: -60px;
+    left: 20px;
+}
+.right_content_1{
+    height: 300px;
+    width: 40%;
+    background-color: #191616;
+    padding-top: 100px;
+}
+
+.right_main_content_1{
+    width: 330px;
+    height: 100%;
+    margin: auto;
+}
+
+/* content_2 */
+.content_2{
+    height:390px;
+    width: 100%;
+    background-color: #ca1212;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.list_item_main_content_2  {
+    display: flex;
+    margin: auto;
+  }
+
+.item_main_content_2 img{
+   height : 390px;
+    width: 280px;
+    margin: 0 12px;
+}
+.content_3{
+    height:846px;
+    width: 100%;
+    background-color: #0b9f44;
+    
+    justify-content: center;
+  
+}
+
+.title_content_3{
+    text-align: center;
+    height: 40px;
+    width: 1473px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.main_content_3{
+    height: 600px;
+    width: 1230px;
+    margin: auto;
+    background-color: #670ed4;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.class_hero{
+    height: 158px;
+    width: 158px;
+    background-color: #d30f0f;
+    transform: rotate(45deg);
+}
+.describe_hero{
+    
+}
+.footer{
+    height: 216px;
+    padding: 0 20px 20px 20px;
+}
+
+.main_footer_top{
+    height: 73px;
+    background-color: #252423;
+    padding: 38px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_footer_top_right{
+    display: flex;
+}
+.main_footer_top_svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    
+}
+svg{
+    fill: #fff;
+}
+.list_main_footer_top_ul{
+    display: flex;
+    width: 1000PX;
+    margin:0px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.list_main_footer_top_ul li{
+    padding: 10px;
+    font-size: 15px;
+    justify-content: space-around;
+    display: block;
+    letter-spacing: .08em;
+    list-style-type: none;
+    font-weight: 800;
+}
+
+.list_icon_beteewn_footer{
+    
+   
+}
+
+.list_main_footer_top_ul li a{
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+
+.list_icon_beteewn_footer a i{
+    font-size: 22px;
+    margin: 0 10px;
+
+}
+
+.high_line_footer{
+    height: 2px;
+    background-color: grey;
+}
+
+.credit{
+    height: 20px;
+    background-color: #252423;
+    padding: 38px 0 55px 0;
+    display: flex; justify-content: space-between; 
+
+}
+
+.left_credit span{
+    font-size: 8px;
+}
+
+.left_credit span,
+.right_credit{
+    font-size: 16px;
+}
+
+.boder_super_list{
+    position: relative;
+    overflow: hidden;
+    width: 1313.8px;
+    height: 173px;
+
+}
+
+
+
