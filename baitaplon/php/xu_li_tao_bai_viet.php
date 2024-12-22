@@ -1,7 +1,8 @@
 <?php
 if (
     !empty($_POST['title']) && !empty($_POST['descri']) &&
-    !empty($_POST['content'])
+    !empty($_POST['content']) &&
+    !empty($_POST['image_link'])
 
 
 ) {
@@ -58,13 +59,14 @@ if (
 
             include('connect.php');
             $title = $_POST['title'];
+            $image_link = $_POST['image_link'];
             $content = $_POST['content'];
             $descri = $_POST['descri'];
-            $date = date("M d, Y");
+            $date = date("d/m/Y");
 
             // Insert dữ liệu vào cơ sở dữ liệu
-            $sql = "INSERT INTO `article`(`title`,`descri`, `content`, `date`,`image_path`)
-            VALUES ('$title','$descri','$content','$date','$image_path')";
+            $sql = "INSERT INTO `article`(`title`,`descri`, `content`, `date`,`image_path`,`image_link`)
+            VALUES ('$title','$descri','$content','$date','$image_path','$image_link')";
             echo $sql;
             mysqli_query($conn, $sql);
             // Nếu hợp lệ, chuyển hướng sang trang chủ

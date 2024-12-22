@@ -63,9 +63,9 @@
         </tr>
         <?php
             include('connect.php');
-            $sql = "select * from sinh_vien";
-            $result= mysqli_query($conn, $sql);
-            while($row = mysqli_fetch_array($result)){
+                $sql = "select * from sinh_vien";
+                $result= mysqli_query($conn, $sql);
+                while($row = mysqli_fetch_array($result)){
         ?>
         <tr>
             <td><?php echo $row['ma_sv']; ?></td>

@@ -39,6 +39,10 @@
                     <input type="file" name="fileToUpload" id="fileToUpload">
 
                 </div>
+                <div>
+                    <p>Hoặc thả đường dẫn ở đây</p>
+                    <input type="text" name="image_link">
+                </div>
                 <!-- <div>
                 <p class="text--size">
                     Năm 2024 sắp khép lại. Chúng tôi sẽ tạm thời "rửa tay gác kiếm" để dành thời gian cho gia đình và
