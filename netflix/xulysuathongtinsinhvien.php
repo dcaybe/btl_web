@@ -1,5 +1,5 @@
 <?php
-include('connect.php');
+include('connect.php'); 
 $maSinhVien = $_POST['id'];
 $diaChi = $_POST['diachi'];
 $soDienThoai = $_POST['sodienthoai'];

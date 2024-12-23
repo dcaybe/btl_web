@@ -75,7 +75,7 @@ if (isset($_GET['page_layout'])) {
             include('dang_nhap.php');
             break;
         case 'thong_tin_ve_riot':
-            include('thong_tin_ve_riot.php');
+            include('thong_tin_riot.php');
             break;
         case 'home':
             include('home.php');
@@ -91,6 +91,9 @@ if (isset($_GET['page_layout'])) {
             break;
         case 'tin_tuc':
             include('tin_tuc.php');
+            break;
+        case 'bai_viet':
+            include('bai_viet.php');
             break;
     }
 }

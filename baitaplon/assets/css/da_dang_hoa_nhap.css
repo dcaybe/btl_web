@@ -6,7 +6,9 @@ body {
   color: #333;
   background-color: #f8f8f8;
 }
-
+.header{
+  background-color: #000;
+}
 .banner {
   display: flex;
   flex-direction: column;

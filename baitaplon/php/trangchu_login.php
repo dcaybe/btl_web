@@ -101,6 +101,9 @@ if (isset($_GET['page_layout'])) {
         case 'tin_tuc':
             include('tin_tuc.php');
             break;
+        case 'bai_viet':
+            include('bai_viet.php');
+            break;
     }
 }
 ?>

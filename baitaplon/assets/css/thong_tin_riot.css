@@ -1,4 +1,9 @@
+.header{
+    background-color: #000;
+}
+
 .main{
+    margin-top: 90px;
     justify-self: unset;
 }
 

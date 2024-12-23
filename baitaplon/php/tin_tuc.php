@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin tức | Riot Games</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="../assets/css/tin_tuc_test.css">
+    <link rel="stylesheet" href="../assets/css/tin_tuc.css">
     <link rel="stylesheet" href="../assets/font/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="..\JS\home.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -43,7 +43,7 @@
                                                 if ($row['type'] == 0) {
                                                     echo $row['link_video'];
                                                 } else {
-                                                    echo $row['image_link'];
+                                                    echo 'trangchu_login.php?page_layout=bai_viet&id=' . $row['id'];
                                                 }
                                                 ?>">
         <div class="top_slider">
@@ -112,42 +112,49 @@ ORDER BY id DESC;";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_array($result)) {
         ?>
-            <div class="item">
-                <img class="img_item"
-                    src="<?php
-                            if (!empty($row['image_path']))
-                                echo $row['image_path'];
-                            else
-                                echo $row['image_link'];
+            <a style="color: #000;" href="<?php
+                                            if (!empty($row['link_video']))
+                                                echo $row['link_video'];
+                                            else
+                                                echo 'trangchu_login.php?page_layout=bai_viet&id=' . $row['id'];
+                                            ?>">
+                <div class="item">
+                    <img class="img_item"
+                        src="<?php
+                                if (!empty($row['image_path']))
+                                    echo $row['image_path'];
+                                else
+                                    echo $row['image_link'];
 
-                            ?>"
+                                ?>"
 
 
-                    alt="">
+                        alt="">
 
-                <div>
+                    <div>
 
-                    <div class="title_video_slider">
-                        <div class="tin_tuc">
-                            Tin tức
+                        <div class="title_video_slider">
+                            <div class="tin_tuc">
+                                Tin tức
+                            </div>
+                            <p style="font-size: 35px; margin: 20px 0;">
+                                <?php
+                                echo $row['title'];
+                                ?>
+                            </p>
+                            <div class="describe">
+                                <?php
+                                echo $row['descri'];
+                                ?>
+                            </div>
+                            <div class="date">
+                                <p><?php echo $row['date']; ?></p>
+                            </div>
                         </div>
-                        <p style="font-size: 35px; margin: 20px 0;">
-                            <?php
-                            echo $row['title'];
-                            ?>
-                        </p>
-                        <div class="describe">
-                            <?php
-                            echo $row['descri'];
-                            ?>
-                        </div>
-                        <div class="date">
-                            <p><?php echo $row['date']; ?></p>
-                        </div>
+
                     </div>
-
                 </div>
-            </div>
+            </a>
 
 
         <?php

@@ -1,37 +1,96 @@
-.content{
-    display: flex;
-    gap: 80px   ;
-    background-color: #dbd9d6;
-    padding: 80px 136px ;
+body {
+    color: black
 }
 
-.left_content{
+.header {
+    padding: 5px 0;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 80px;
+    background-color: #111111;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.warning{
+    display: none;
+    background-color: #d1363a;
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    min-width: 500px;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 100;
+    text-align: center;
+    
+    padding-bottom: 20px;
+    transition: all 0.5s ease-in-out; /* Tạo hiệu ứng chuyển đổi mượt mà */
+}
+.warning_btn{
+    margin: auto;
+    width: 50px;
+    border: 2px solid black;
+    background-color: rgb(62, 62, 219);
+}
+
+.exits_delete{
+    font-size: 20px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.option{
+
+    bottom: 60px;
+    right: 60px;
+    font-size: 30px;
+    position: fixed;
+}
+
+.delete_option{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.content_bai_viet {
+    display: flex;
+    gap: 80px;
+    background-color: #dbd9d6;
+    padding: 80px 136px;
+}
+
+.left_content {
     flex: 4;
     background-color: #dbd9d6;
     position: relative;
 }
 
-.list_icon{
+.list_icon {
     position: absolute;
-    top: 96px;
-    left: 100px;
+    top: 180px;
+    left: 60px;
 }
 
-.list_icon i{
+.list_icon i {
     margin-bottom: 10px;
     font-size: 32px;
 }
 
-.right_content{
+.right_content {
     flex: 2;
     background-color: #dbd6d9;
 }
 
-.item{
+.item {
     margin-bottom: 20px;
 }
 
-.mac{
+.mac {
     text-align: center;
     height: 20px;
     width: 80px;
@@ -40,25 +99,24 @@
     margin-right: 10px;
 }
 
-.mac--absolut{
+.mac--absolut {
     position: absolute;
 
-}  
+}
 
-.date{
+.date {
     margin-bottom: 20px;
 }
 
-.img_1{
+.img_1 {
     height: 400px;
-    background-color: blue;
 }
 
-.img_right{
-    height: 160px;
+.img_right {
+    height: 200px;
     background-color: #1aa3f2;
 }
 
-.text--size{
+.text--size {
     font-size: 25px;
 }

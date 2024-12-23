@@ -1,0 +1,249 @@
+
+.main{
+    width: 100%;
+    height: 800px;
+    background-image: url(https://www.riotgames.com/darkroom/2560/2c837000646ff664d776aab644e34c13:ea65ec7761d4d14936f5131624537aa7/01fr009t1-display-full.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-color: #000;
+}
+.a{
+    color: white;
+    background: red;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    top: auto;
+    margin-left: 130px;
+    bottom: auto;
+    right: auto;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.b{
+    color: white;
+    font-size: 5rem;
+    line-height: 1.067;
+    margin-top: 20px;
+    text-align: center;
+}
+.c{
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.667;
+    text-align: center;
+}
+.GT1{
+    text-align: center; 
+    font-size: 30px;
+    line-height: 1.231;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 50px;
+}
+.GT2{
+    font-size: 28px;
+    line-height: 1.231;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+.chu{
+    display: flex;
+    gap: 60px; /*khoảng cách giữa các ảnh*/
+    height: 100px;
+    width: 100px;
+    margin-left: 4%;
+    margin-top: 9%;
+    text-align: center;
+}
+.gg{
+    background: black;
+    color: white;
+    margin-top: 3%;
+    left: 215px;
+    letter-spacing: .42em;
+    position: absolute;
+}
+.ggg{
+    font-size: 150%;
+    letter-spacing: .01em;
+    margin-top: 27%;
+}
+.gggg{
+    font-size: 120%;
+    margin-top: 5%;
+}
+.hh{
+    background: black;
+    color: white;
+    margin-top: 3%;
+    letter-spacing: .42em;
+    position: absolute; 
+    left: 575px; 
+}
+.hhh{
+    font-size: 150%;
+    letter-spacing: .01em;
+    margin-top: 27%;
+}
+.hhhh{
+    font-size: 120%;
+    margin-top: 5%;
+}
+.ii{
+    background: black;
+    color: white;
+    margin-top: 3%;
+    letter-spacing: .42em;
+    position: absolute;
+    left: 930px;
+}
+.iii{
+    font-size: 150%;
+    letter-spacing: .01em;
+    margin-top: 27%;
+}
+.iiii{
+    font-size: 120%;
+    margin-top: 5%;
+}
+.jj{
+    background: black;
+    color: white;
+    margin-top: 3%;
+    letter-spacing: .42em;
+    position: absolute;
+    left: 1280px;
+}
+.jjj{
+    font-size: 150%;
+    letter-spacing: .01em;
+    margin-top: 27%;
+}
+.jjjj{
+    font-size: 120%;
+    margin-top: 5%;
+}
+.st{
+    margin-top: 30%;
+    text-align: center;
+    font-size: 300%;
+}
+.bang{
+    display: flex;
+    gap: 6px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.bang1{
+    background-image: url(https://www.riotgames.com/darkroom/700/f2e75707b54bd13199387e7be5b7150e:c8b46370746e812262ac09101c6c6b2f/social-impact-rgsif-2023.jpg);
+    width: 100%;
+    height: 390px;
+}
+.bang11{
+    color: white;
+    margin-top: 32%;
+    font-size: 300%;
+    margin-left: 6%;
+}
+.bang111{
+    margin-left: 6%;
+}
+.bang2{
+    background-image: url(https://www.riotgames.com/darkroom/700/94b77a2b39a3ad775a0a6db3bfe37205:3c407fb3a2d6c348ac1dcb7b677e30fb/ivern.png);
+    width: 100%;
+    height: 390px;
+}
+.bang22{
+    color: white;
+    margin-top: 32%;
+    font-size: 300%;
+    margin-left: 6%;
+}
+.bang222{
+    margin-left: 6%;
+}
+.img{
+    display: flex;
+    gap: 10px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img1{
+    background-image: url(https://www.riotgames.com/darkroom/350/566ab7feaa16e5a4d9906b916de6dde1:c2d616ddebcaee1327227a94aa55efc6/social-impact-in-game-fundraisers.jpg);
+    width: 23%;
+    height: 500px;
+}
+.img11{
+    color: white;
+    margin-top:115%;
+    background: black;
+}
+.img2{
+    background-image: url(https://www.riotgames.com/darkroom/350/7a4eea065f28535ccce4945492920884:a75387257b8c77d536d1a5755ce8ba41/js3-4547-e8402185-76a0-4d77-9401-dcd5b8b3c7a1-20220811035617.JPG);
+    width: 23%;
+    height: 500px;
+}
+.img22{
+    color: white;
+    margin-top:123.2%;
+    background: black;
+}
+.img3{
+    background-image: url(https://www.riotgames.com/darkroom/350/0107276d850701fff91dbdd0c6b9da85:3d153a901d9234ef7d9df80895006b7e/190518-lax-food-bank010-1.jpg);
+    width: 23%;
+    height: 500px;
+}
+.img33{
+    color: white;
+    margin-top:123.2%;
+    background: black;
+}
+.dex{
+    display: flex;
+    text-align: center;
+    margin-top: 2%; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: flex;
+    margin: 0 40px 0 40px;
+    width: 100%;
+    background-color: #dad9d5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item{
+    /* height: 600px; */
+    color: #000;
+    width: 655px;
+    background-color:  #dad9d5;
+    margin-bottom: 120px;
+}
+.img_item{
+    height: 370px;
+    width: 100%;
+}
+.item--right{
+    margin-left: 80px;
+}
+.item--last{
+    margin-bottom: 80px;
+}
+.content{
+ background-color:  #dad9d5;
+ color: #fff;
+}
+.cuoi{
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+}

@@ -52,13 +52,15 @@ if (
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             echo "File " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " đã được cập nhật";
+            $image_path = $target_file;
         }
     }
     #End xử lý ảnh
-}
-$image_path = $target_file;
+} else $image_path = '';
+
 
 include('connect.php');
+$id = $_GET['id'];
 $title = $_POST['title'];
 $image_link = $_POST['image_link'];
 $content = $_POST['content'];
@@ -66,8 +68,10 @@ $descri = $_POST['descri'];
 $date = date("d/m/Y");
 
 // Insert dữ liệu vào cơ sở dữ liệu
-$sql = "INSERT INTO `article`(`title`, `descri`, `content`, `date`, `image_path`, `image_link`)
-VALUES ('$title', '$descri', '$content', '$date', '$image_path', '$image_link')";
+
+
+$sql = "UPDATE `article` SET `title`='$title',`descri`='$descri',`content`='$content',`image_path`='$image_path',`image_link`='$image_link' WHERE `id` = $id ";
+
 echo $sql;
 mysqli_query($conn, $sql);
 // Nếu hợp lệ, chuyển hướng sang trang chủ
